@@ -789,22 +789,22 @@ install_imagemagick() {
             CXXFLAGS="$BUILD_CXXFLAGS" \
             --disable-static \
             --enable-shared \
-            --enable-openmp \
             --enable-cipher \
             --enable-hdri \
-            --enable-docs \
+            --enable-openmp \
+            --disable-docs \
             --disable-opencl \
             --with-threads \
             --with-modules \
             --with-quantum-depth="$QUANTUM_DEPTH" \
             --with-magick-plus-plus \
-            --with-perl \
+            --without-perl \
             --without-jemalloc \
             --without-tcmalloc \
             --without-umem \
             --without-autotrace \
+            --without-x \
             --with-bzlib \
-            --with-x \
             --with-zlib \
             --with-zstd \
             --without-dps \
